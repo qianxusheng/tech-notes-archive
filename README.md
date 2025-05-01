@@ -13,3 +13,6 @@
 - [计算机网络](./notes/网络.md)
 - [数据库](./notes/数据库.md)
 - [计算机组成原理](./notes/计算机组成.md)
+- [C++](./notes/C++.md)
+- [Java](./notes/Java.md)
+- [Python](./notes/Python.md)
