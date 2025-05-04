@@ -32,4 +32,12 @@ class and object:
 - **nested class:** inner class and static nested class; 1. it's a way of logically grouping classes that are only used in one place; 2. It increases encapsulation; 3. It can lead to more readable and maintainable code.  
 - **shadowing in nested class:** When a variable is declared in an inner class with the same name as one in an outer class, the inner class variable takes precedence during access.  
 
+annotation:
+---
+- An annotation itself is just a "label" — it doesn't perform any action on its own.  
+- Through **reflection**, a program can read this "label" at runtime and execute corresponding logic based on it.  
+- This approach is commonly used in *framework design*, such as in **Spring**, **JUnit**, and **ORM mapping**.‘
 
+interface:
+---
+- 
