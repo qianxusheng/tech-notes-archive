@@ -40,4 +40,6 @@ annotation:
 
 interface:
 ---
-- 
+- When you define a new interface, you are defining a **new reference data type**. You can use interface names anywhere you can use any other data type name. If you define a reference variable whose type is an interface, any object you assign to it must be an instance of a class that implements the interface  
+- **interface upgrading:** extends old interface; using default method(need to be implemented); static method  
+- An interface declaration can contain method signatures, default methods, static methods and constant definitions. The only methods that have implementations are default and static methods.
