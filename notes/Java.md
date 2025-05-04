@@ -29,7 +29,7 @@ class and object:
 - **this:** *this* key word has two functionality. Field shadowing and **constructor reusing**:  
 ![image](https://github.com/user-attachments/assets/4f27898e-b92e-485a-9b2d-2c1c1a2773df)
 ![image](https://github.com/user-attachments/assets/f99c5526-5c5c-4886-ad29-6952d393598d)  
-- **nested class:** inner class and static nested class; 1. it's a way of logically grouping classes that are only used in one place; 2. It increases encapsulation; 3. It can lead to more readable and maintainable code.  
+- **nested class:** inner class and static nested class; 1. it's a way of logically grouping classes that are only used in one place; 2. It increases encapsulation; 3. It can lead to more readable and maintainable code. Nested class is a **member**, so it can access all the private members.  
 - **shadowing in nested class:** When a variable is declared in an inner class with the same name as one in an outer class, the inner class variable takes precedence during access.  
 
 annotation:
@@ -43,3 +43,19 @@ interface:
 - When you define a new interface, you are defining a **new reference data type**. You can use interface names anywhere you can use any other data type name. If you define a reference variable whose type is an interface, any object you assign to it must be an instance of a class that implements the interface  
 - **interface upgrading:** extends old interface; using default method(need to be implemented); static method  
 - An interface declaration can contain method signatures, default methods, static methods and constant definitions. The only methods that have implementations are default and static methods.
+
+inheritance:
+---
+- You can write a new *instance method* in the subclass that has the same signature as the one in the superclass, thus *overriding* it.  
+- You can write a new *static method* in the subclass that has the same signature as the one in the superclass, thus *hiding* it.
+- You can write a subclass *constructor* that invokes the constructor of the superclass, either implicitly or by using the keyword **super**.  
+- **Private Members in a Superclass:** A subclass does not inherit the private members of its parent class. However, if the superclass has **public** or **protected methods** for accessing its private fields, these can also be used by the subclass. **A nested class** has access to all the private members of its enclosing class—both fields and methods. Therefore, a public or protected nested class inherited by a subclass has indirect access to all of the private members of the superclass.
+- **casting:**
+  - implicity casting(subclass->superclass) *Object obj = new MountainBike()*;  
+  - explicity casting(superclass->subclass) *MountainBike myBike = (MountainBike)obj*.
+- **Multiple Inheritance of State, Implementation, and Type:** Java does not allow multiple inheritance of state and implementation to avoid issues like field and method conflicts. However, Java supports multiple inheritance of type through interfaces.
+- **overriding and hiding: happens when superclass and subclass have the same signature**
+  - overriding: instance method in the subclass overrides the superclass's method.  
+  - hiding: static method in the subclass hides the one in the superclass.
+  - modifier: An overriding method may increase the visibility of the method it overrides, but cannot reduce it.
+  - interface methods(complicated): some rules to decide choose which method.
