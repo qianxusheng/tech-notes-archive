@@ -71,7 +71,8 @@ Number and String:
 ---
 They are Classes.  
 
-generics: `generic type` is a instance, `generic class` is a class, `generic method`
+generics: `generic type` is a instance, `generic class` is a class, `generic method`  
+Generics were introduced to the Java language to provide tighter type checks at compile time and to support generic programming.
 ---
 - **Invoking and Instantiating a Generic Type:** `Box<Integer> integerBox = new Box<Integer>()`;  
   - **type parameter:** `Box<T> box`; T is type parameter - placeholder;    
@@ -82,4 +83,6 @@ generics: `generic type` is a instance, `generic class` is a class, `generic met
 - **generic methods**  
 - **bounded type parameter:** It is crucial for generic methods, as it allows you to impose constraints on the type parameter. For example, you might need to bound the type parameter to Comparable so that you can perform comparisons within the generic method.  
 - **subtyping in generics:** Even A is B's subclass, it doesn't mean `class<A>` is `class<B>`'s subtype. The default behavior in generics is that generic types do not have an inheritance relationship, even if their type parameters do. Therefore, to establish an inheritance relationship between generic types, the generic class itself must explicitly extend another generic class.  
-- 
+- **type inference:** Type inference is a Java compiler's ability to look at each method invocation and corresponding declaration to determine the type argument (or arguments) that make the invocation applicable. We can use type inference in generic method, instantiation of generic class, generic constructors.  
+- **wild card:** In generic code, the question mark (?), called the wildcard, represents an unknown type. The wildcard ? is designed to address the issue of subtype incompatibility in generics, allowing code to handle different generic types more flexibly while preserving type safety. There are three tpyes of wildcards: Upper bounded wildcards, unbounded wildcards, lower bounded wildcards.  
+- **type erasure:** Type erasure ensures that no new classes are created for parameterized types; consequently, generics incur no runtime overhead.  
