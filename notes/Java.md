@@ -6,6 +6,7 @@ concept basics:
 - **class:** a blueprint of object  
 - **inferface:** a collection of methods without implementation  
 - **package:** a namesapce that organizes classes and interfaces  
+- **type:** Note that types refers to classes, interfaces, enumerations, and annotation types. Enumerations and annotation types are special kinds of classes and interfaces, respectively, so types are often referred to in this lesson simply as classes and interfaces.
 
 language basics:
 ---
@@ -86,3 +87,7 @@ Generics were introduced to the Java language to provide tighter type checks at 
 - **type inference:** Type inference is a Java compiler's ability to look at each method invocation and corresponding declaration to determine the type argument (or arguments) that make the invocation applicable. We can use type inference in generic method, instantiation of generic class, generic constructors.  
 - **wild card:** In generic code, the question mark (?), called the wildcard, represents an unknown type. The wildcard ? is designed to address the issue of subtype incompatibility in generics, allowing code to handle different generic types more flexibly while preserving type safety. There are three tpyes of wildcards: Upper bounded wildcards, unbounded wildcards, lower bounded wildcards.  
 - **type erasure:** Type erasure ensures that no new classes are created for parameterized types; consequently, generics incur no runtime overhead.  
+
+package:
+---
+- **package:** use package statement. In on single file, you are allowed to put only one public type in the file, but you can put multiple private types in the file.
