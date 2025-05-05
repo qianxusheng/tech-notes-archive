@@ -91,3 +91,17 @@ Generics were introduced to the Java language to provide tighter type checks at 
 package:
 ---
 - **package:** use package statement. In on single file, you are allowed to put only one public type in the file, but you can put multiple private types in the file.
+
+reflection:
+---
+Reflection is commonly used by programs which require the ability to examine or modify the runtime behavior of applications running in the Java virtual machine. For example, you can create a class browser to enumerate the members of classes.  
+
+JVM:
+---
+- The Java Virtual Machine (JVM) is a virtual computer that runs Java bytecode(this means the program is running on the JVM). It hides differences between operating systems and hardware, enabling Java’s “write once, run anywhere (WORA)” capability.
+- main functionality:
+  - Class Loader: load .class file.
+  - Execution Engine: executes bytecode using either an interpreter or JIT (Just-In-Time) compiler for faster performance.
+  - Garbage Collector: automatic memory management (GC).  
+  - Runtime Date Area: allocates memory during program execution.  
+  - Native Interface: support for native library integration.  
