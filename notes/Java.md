@@ -81,5 +81,5 @@ generics: `generic type` is a instance, `generic class` is a class, `generic met
 - **raw type:** A raw type refers to a generic type that hasn't been assigned a specific type argument. For example, Box rawBox = new Box();. Raw types are common in legacy code, as many API classes (such as those in the Collections framework) were not generic before JDK 5.0.  
 - **generic methods**  
 - **bounded type parameter:** It is crucial for generic methods, as it allows you to impose constraints on the type parameter. For example, you might need to bound the type parameter to Comparable so that you can perform comparisons within the generic method.  
-- **subtyping in generics:** Even A is B's subclass, it doesn't mean `class<A>` is `class<B>`'s subtype. It's a generic class, it should use extends or implements keyword to subtype a generic class.
+- **subtyping in generics:** Even A is B's subclass, it doesn't mean `class<A>` is `class<B>`'s subtype. The default behavior in generics is that generic types do not have an inheritance relationship, even if their type parameters do. Therefore, to establish an inheritance relationship between generic types, the generic class itself must explicitly extend another generic class.  
 - 
