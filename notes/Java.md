@@ -59,3 +59,14 @@ inheritance:
   - hiding: static method in the subclass hides the one in the superclass.
   - modifier: An overriding method may increase the visibility of the method it overrides, but cannot reduce it.
   - interface methods(complicated): some rules to decide choose which method.
+- **polymorphism:** a principle in biology in which an organism or species can have many different forms or stages.  
+- **super:** access superclass'smethods that are overrided by subclass or invoke superclass's constructor.  
+- **object:** Object is a superclass of all other class, and it contians *clone*, *hashcode*, *toString*, *equals*, *getClass*, *finalize*.
+- **final:** The final keyword is used to prevent a method from being overridden.  
+- **abstract class and interface:**
+  - abstract class: You want to share code among several closely **related classes**; You want to declare **non-static or non-final fields**.  
+  - interface: You expect that **unrelated classes** would implement your interface; You want to take advantage of **multiple inheritance** of type.
+
+Number and String:
+---
+They are Classes.
