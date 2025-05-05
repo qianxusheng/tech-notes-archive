@@ -17,3 +17,6 @@
 - [C++](./notes/C++.md)
 - [Java](./notes/Java.md)
 - [Python](./notes/Python.md)
+- [Spring](./notes/Spring.md)
+- [Angular](./notes/Angular.md)
+
