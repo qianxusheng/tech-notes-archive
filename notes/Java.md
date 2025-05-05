@@ -98,7 +98,7 @@ Reflection is commonly used by programs which require the ability to examine or 
 
 JVM:
 ---
-- The Java Virtual Machine (JVM) is a virtual computer that runs Java bytecode(this means the program is running on the JVM). It hides differences between operating systems and hardware, enabling Java’s “write once, run anywhere (WORA)” capability.
+- The Java Virtual Machine (JVM) is a virtual computer that runs Java bytecode(this means the program is running on the JVM). `It hides differences between operating systems and hardware, enabling Java’s “write once, run anywhere (WORA)” capability`.
 - main functionality:
   - Class Loader: load .class file.
   - Execution Engine: executes bytecode using either an interpreter or JIT (Just-In-Time) compiler for faster performance.
