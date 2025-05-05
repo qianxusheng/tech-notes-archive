@@ -19,4 +19,5 @@
 - [Python](./notes/Python.md)
 - [Spring](./notes/Spring.md)
 - [Angular](./notes/Angular.md)
+- [Data Structure](./notes/datastructure.md)
 
