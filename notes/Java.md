@@ -69,4 +69,17 @@ inheritance:
 
 Number and String:
 ---
-They are Classes.
+They are Classes.  
+
+generics: `generic type` is a instance, `generic class` is a class, `generic method`
+---
+- **Invoking and Instantiating a Generic Type:** `Box<Integer> integerBox = new Box<Integer>()`;  
+  - **type parameter:** `Box<T> box`; T is type parameter - placeholder;    
+  - **type argument:** `Box<String> box`; String is type argument;  
+  - **Parameterized Types:** `Box<String>` is a parameterized type. We use a specific type(String) as the type argument.
+- **diamond:** `Box<Integer> integerBox = new Box<>()`; It is a syntax that complier can infer current type by context.  
+- **raw type:** A raw type refers to a generic type that hasn't been assigned a specific type argument. For example, Box rawBox = new Box();. Raw types are common in legacy code, as many API classes (such as those in the Collections framework) were not generic before JDK 5.0.  
+- **generic methods**  
+- **bounded type parameter:** It is crucial for generic methods, as it allows you to impose constraints on the type parameter. For example, you might need to bound the type parameter to Comparable so that you can perform comparisons within the generic method.  
+- **subtyping in generics:** Even A is B's subclass, it doesn't mean `class<A>` is `class<B>`'s subtype. It's a generic class, it should use extends or implements keyword to subtype a generic class.
+- 
