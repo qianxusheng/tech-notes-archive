@@ -43,5 +43,15 @@ exceptions: it's runtime error, you can use **try...except** to catch or **raise
 finally: The finally keyword is used to release resources, regardless of whether an exception occurs or not.
 
 ## class
+- scope: local(nested function); enclosing(outer function); global(in the module); built-in(python built-in function, like *len()*)
+- namespace(dictionary): class creates a new namespace
+- class object: Class objects support attribute references and instantiation -- x = class.i; x = Myclass()
+- instance object: use instance as object -- node = TreeNode() --> this is a instance object
+- method object: use method as object -- xf = x.f() --> *xf* is a method object
+- class variable and instance variable
+- `@classmethod`(cannot access instance variable, use *cls* as parameter), `@staticmethod`(cannot access either instance variable or class variable, don't have parameter), None(instance method, use *self* as parameter)
+- access modifier: python don't have access modifier, we use naming convetion, like `_number` means this variable is private.
+- Generator and Iterator: An iterator implements the __iter__() and __next__() methods. Generators provide a concise way to create iterators using generator expressions (), which `lazily generate values on demand`.
 
 ## virtual environment
+Venv is used for eliminating package conflicts between different Python applications.
