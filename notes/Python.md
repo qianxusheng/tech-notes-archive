@@ -50,7 +50,7 @@ finally: The finally keyword is used to release resources, regardless of whether
 - method object: use method as object -- xf = x.f() --> *xf* is a method object
 - class variable and instance variable
 - `@classmethod`(cannot access instance variable, use *cls* as parameter), `@staticmethod`(cannot access either instance variable or class variable, don't have parameter), None(instance method, use *self* as parameter)
-- access modifier: python don't have access modifier, we use naming convetion, like `_number` means this variable is private.
+- access modifier: python don't have access modifier, we use naming convetion, like `__number` means this variable is private, `_number` means this variable is protected.
 - Generator and Iterator: An iterator implements the __iter__() and __next__() methods. Generators provide a concise way to create iterators using generator expressions (), which `lazily generate values on demand`.
 - python class allows multiple inheritance. Python doesn't support **overload** but **override** is good.
 
