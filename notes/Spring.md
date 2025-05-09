@@ -1,4 +1,4 @@
-https://spring.io/projects/spring-framework
+# [https://spring.io/projects/spring-framework](https://docs.spring.io/spring-framework/reference/core/beans/introduction.html)
 ---
 - Spring IOC (Inversion of Control): 理解 Spring 的控制反转思想，学习如何通过 Spring 容器管理对象的生命周期、依赖注入和解耦。
 - Dependency Injection (DI): 学习依赖注入的基本原理和方式，包括构造器注入、Setter 注入和接口注入等。
