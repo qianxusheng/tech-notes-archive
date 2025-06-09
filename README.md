@@ -19,5 +19,6 @@
 - [Python](./notes/Python.md)
 - [Spring](./notes/Spring.md)
 - [Angular](./notes/Angular.md)
+- [React](./notes/React.md)
 - [Data Structure](./notes/Data_Structure.md)
 
