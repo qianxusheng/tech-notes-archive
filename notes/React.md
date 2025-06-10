@@ -19,7 +19,7 @@
 - JSX是一种更严格的XML，可以写js（用curly brace）和html liked markup langauge，只能返回一个root tag；{{}}传入的是js object
 - component传参；props或整个JSX
 - conditional rendering(if-else;&&shortcut representation前者必须是boolean，不能是数字，会渲染0;?:ternary operation) and list rendering(filter, map)
-- keeping component pure:尽可能保证组件独立，same input same output，便于safe cache，可以用于不同的环境（same input same output）；strictMode可以检查purity
+- keeping component pure:local mutation是可以的，function内部创建一个变量并修改，但是不能修改全局或者外部变量，会导致function的行为不可预测，不pure；尽可能保证组件独立，same input same output，便于safe cache，可以用于不同的环境（same input same output）；strictMode可以检查purity
 - UI是一个tree结构；
 - react的render tree就是组件树，代表组件之间的父子关系
 - module dependency tree就是包依赖tree
