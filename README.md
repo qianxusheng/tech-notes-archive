@@ -21,4 +21,5 @@
 - [Angular](./notes/Angular.md)
 - [React](./notes/React.md)
 - [Data Structure](./notes/Data_Structure.md)
+- [Design Pattern](./notes/design_pattern.md)
 
